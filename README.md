@@ -1,4 +1,3 @@
-```text
 # 73-Tap-FIR-Filter
 
 > Design, implementation, and verification of a 73-tap symmetric low-pass FIR filter on a Xilinx Artix-7 (`xc7a100tcsg324-1`) using a pipelined, symmetry-folded, dual-port circular-buffer MAC — **1 DSP48E1, 389 LUTs, 108 LUTRAM, 178 FFs**, fully verified bit-for-bit against a C golden model.
@@ -33,7 +32,7 @@ The design meets a strict *minimum FPGA resource* mandate while comfortably sati
 
 ## 📁 Repository Structure
 
-```
+```text
 73-Tap-FIR-Filter/
 ├── src/
 │   ├── fir_top.sv                 # Top-level wrapper module
@@ -54,7 +53,7 @@ The design meets a strict *minimum FPGA resource* mandate while comfortably sati
 │   ├── buffer_addressing.png      # Partition 2a: circular buffer + pointers
 │   ├── control_sync.png           # Partition 1: debounce + pacing FSM
 │   ├── memory_led_interface.png   # Partition 3: output RAM + LED readback
-│   ├── micro_architecture_fir_top.png  # Full fir_top micro-architecture
+│   ├── micro_architecture_fir_top.png # Full fir_top micro-architecture
 │   └── pipeline_core.png          # Partition 2b: 3-stage MAC pipeline
 ├── FIR_FILTER_FINAL_DRAFT.xpr     # Xilinx Vivado Project File
 └── README.md
@@ -118,7 +117,7 @@ Both the C golden model and the RTL apply identical convergent-style rounding:
 
 ### Functional Verification
 
-```
+```text
 RESULT: 100 PASS / 0 FAIL out of 100 samples
 *** OVERALL: PASS -- all outputs match the C golden model ***
 ```
@@ -148,7 +147,7 @@ run all
 ```
 
 Expected console output:
-```
+```text
 RESULT: 100 PASS / 0 FAIL out of 100 samples
 *** OVERALL: PASS -- all outputs match the C golden model ***
 ```
