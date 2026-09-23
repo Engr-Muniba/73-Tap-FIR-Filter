@@ -1,3 +1,4 @@
+```text
 # 73-Tap-FIR-Filter
 
 > Design, implementation, and verification of a 73-tap symmetric low-pass FIR filter on a Xilinx Artix-7 (`xc7a100tcsg324-1`) using a pipelined, symmetry-folded, dual-port circular-buffer MAC — **1 DSP48E1, 389 LUTs, 108 LUTRAM, 178 FFs**, fully verified bit-for-bit against a C golden model.
